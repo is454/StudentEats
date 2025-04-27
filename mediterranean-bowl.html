@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mediterranean Bowl</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #fffaf5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffa64d;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ffa64d;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      color: #ffa64d;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    h2 {
+      color: #ff944d;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #ffa64d;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .step {
+      margin-bottom: 1rem;
+    }
+
+    .toggle-btns {
+      display: none;
+    }
+
+    .image-side {
+      flex: 0 0 250px;
+    }
+
+    .image-side img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MealPrep Magic</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="our-products.html">Our Products</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>🥗 Mediterranean Bowl</h1>
+    <p><strong>Servings:</strong> 2 people for 3 days &nbsp; | &nbsp; <strong>Cook Time:</strong> ~30 minutes</p>
+
+    <!-- Ingredients + Image Container -->
+    <div class="section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+      <!-- Ingredients List -->
+      <div style="flex: 1 1 500px; min-width: 300px;">
+        <h2>🧂 Ingredients</h2>
+
+        <h3>Chicken Breast</h3>
+        <ul>
+          <li>3 big skinless chicken breasts</li>
+          <li>Salt, pepper, garlic powder, rosemary</li>
+          <li>Olive oil</li>
+        </ul>
+
+        <h3>Cottage Cheese Sauce</h3>
+        <ul>
+          <li>2 cups of cottage cheese</li>
+          <li>Rosemary, salt, pepper</li>
+          <li>1 garlic clove</li>
+          <li>½ lemon juice</li>
+        </ul>
+
+        <h3>Pickled Onions</h3>
+        <ul>
+          <li>1 large red onion</li>
+          <li>1 cup white vinegar, 1 cup water</li>
+          <li>1 tbsp whole peppercorns, pinch of salt</li>
+        </ul>
+
+        <h3>Airfryer Roasted Potatoes</h3>
+        <ul>
+          <li>2 large yellow potatoes</li>
+          <li>Olive oil, smoked paprika, garlic powder, salt, pepper</li>
+        </ul>
+
+        <h3>Cucumber Side</h3>
+        <ul>
+          <li>1 large cucumber</li>
+          <li>1 lemon, salt</li>
+        </ul>
+
+        <h3>Tahini Dressing</h3>
+        <ul>
+          <li>½ cup tahini, ½ cup Greek yogurt</li>
+          <li>¼ cup olive oil, 1 lemon</li>
+          <li>Salt, pepper</li>
+        </ul>
+
+        <h3>Other</h3>
+        <ul>
+          <li>Store-bought hummus</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="image-side">
+        <img src="image-8.jpg" alt="Mediterranean Bowl" />
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="section">
+      <h2>👩‍🍳 Instructions</h2>
+      <div class="step"><strong>1.</strong> Clean and trim chicken. Butterfly and halve to make six thin pieces.</div>
+      <div class="step"><strong>2.</strong> Season chicken with listed spices and let it rest.</div>
+      <div class="step"><strong>3.</strong> For cucumber side: slice and mix with lemon and salt.</div>
+      <div class="step"><strong>4.</strong> For pickled onions: boil vinegar, water, peppercorns, and salt.</div>
+      <div class="step"><strong>5.</strong> Julienne red onion, place in container, pour boiled mixture over.</div>
+      <div class="step"><strong>6.</strong> Let onions cool, then refrigerate.</div>
+      <div class="step"><strong>7.</strong> Cut potatoes, season, roast at 400°F for ~18 mins until golden.</div>
+      <div class="step"><strong>8.</strong> Mix cottage cheese dip ingredients.</div>
+      <div class="step"><strong>9.</strong> For tahini dressing, mix all ingredients or blend until smooth.</div>
+      <div class="step"><strong>10.</strong> Assemble your bowl with store-bought hummus and enjoy!</div>
+    </div>
+  </div>
+</body>
+</html>

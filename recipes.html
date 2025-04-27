@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffa64d;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ffa64d;
+    }
+
+    .main-content {
+      max-width: 1000px;
+      margin: 1rem auto;
+      display: flex;
+      flex-wrap: wrap; /* Allows cards to wrap onto the next row */
+      justify-content: space-between; /* Adds space between cards */
+      gap: 1rem; /* Adjusted to ensure equal spacing between cards */
+    }
+
+    .recipe-card {
+      background: white;
+      padding: 0rem;
+      border-radius: 12px;
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: calc(33.333% - 1rem); /* Three cards per row by default */
+      text-align: center;
+      flex-grow: 0;
+      margin-bottom: 1rem; /* Ensures space at the bottom of each card */
+    }
+
+    @media (max-width: 768px) {
+      .recipe-card {
+        max-width: calc(50% - 1rem); /* Two cards per row on medium screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .recipe-card {
+        max-width: 100%; /* One card per row on small screens */
+      }
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .recipe-card img:hover {
+      transform: scale(1.03);
+    }
+
+    h2 {
+      margin: 1rem 0 0.5rem;
+      color: #ffa64d;
+    }
+
+    .stars {
+      font-size: 1.7rem;
+      margin: 0.5rem 0;
+    }
+
+    .stars span {
+      cursor: pointer;
+      color: #ccc;
+      transition: color 0.2s;
+    }
+
+    .stars span.hover,
+    .stars span.selected {
+      color: #ffc107;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MealPrep Magic</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="our-products.html">Our Products</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+
+    <!-- Recipe Card 1 -->
+    <div class="recipe-card">
+      <a href="chicken-cutlet.html">
+        <img src="image-7.jpg" alt="Chicken Cutlet with Lemon Pasta" />
+      </a>
+      <h2>Chicken Cutlet with Lemon Pasta</h2>
+      <div class="stars" data-recipe="cutlet">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+      </div>
+    </div>
+
+    <!-- Recipe Card 2 -->
+    <div class="recipe-card">
+      <a href="mediterranean-bowl.html">
+        <img src="image-8.jpg" alt="Mediterranean Bowl" />
+      </a>
+      <h2>Mediterranean Bowl</h2>
+      <div class="stars" data-recipe="medbowl">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+      </div>
+    </div>
+
+    <!-- Recipe Card 3 -->
+    <div class="recipe-card">
+      <a href="steak-baked-potato.html">
+        <img src="image-9.jpg" alt="Steak with Baked Potato" />
+      </a>
+      <h2>Steak with Baked Potato</h2>
+      <div class="stars" data-recipe="steakbaked">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+      </div>
+    </div>
+
+    <!-- Recipe Card 4: Steak with Broccoli -->
+    <div class="recipe-card">
+      <a href="steak-and-broccoli.html">
+        <img src="image-10.jpg" alt="Steak with Broccoli" />
+      </a>
+      <h2>Steak with Broccoli</h2>
+      <div class="stars" data-recipe="steakbroccoli">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+      </div>
+    </div>
+
+    <!-- Recipe Card 5: Chicken with Mashed Potatoes and Asparagus/Broccoli -->
+    <div class="recipe-card">
+      <a href="chicken-mashed-potatoes.html">
+        <img src="image-11.jpg" alt="Chicken with Mashed Potatoes and Asparagus or Broccoli" />
+      </a>
+      <h2>Chicken with Mashed Potatoes and Asparagus or Broccoli</h2>
+      <div class="stars" data-recipe="chickenmashedpotatoes">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+      </div>
+    </div>
+
+    <!-- Recipe Card 6: Lemon Dessert -->
+    <div class="recipe-card">
+      <a href="lemon-dessert.html">
+        <img src="image-12.jpg" alt="Lemon Dessert" />
+      </a>
+      <h2>Lemon Dessert</h2>
+      <div class="stars" data-recipe="lemondessert">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Enable star rating for each recipe card
+    document.querySelectorAll('.stars').forEach(starContainer => {
+      const stars = starContainer.querySelectorAll('span');
+      let currentRating = 0;
+
+      stars.forEach(star => {
+        star.addEventListener('mouseenter', () => {
+          const val = +star.getAttribute('data-value');
+          highlightStars(stars, val);
+        });
+
+        star.addEventListener('mouseleave', () => {
+          highlightStars(stars, currentRating);
+        });
+
+        star.addEventListener('click', () => {
+          currentRating = +star.getAttribute('data-value');
+          highlightStars(stars, currentRating);
+          alert(`You rated "${starContainer.parentElement.querySelector('h2').textContent}" ${currentRating} star${currentRating > 1 ? 's' : ''}.`);
+        });
+      });
+
+      function highlightStars(stars, rating) {
+        stars.forEach(star => {
+          const val = +star.getAttribute('data-value');
+          star.classList.toggle('selected', val <= rating);
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

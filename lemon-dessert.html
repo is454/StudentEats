@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lemon Dessert</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #fffaf5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffa64d;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ffa64d;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      color: #ffa64d;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    h2 {
+      color: #ff944d;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #ffa64d;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .step {
+      margin-bottom: 1rem;
+    }
+
+    .toggle-btns {
+      display: none;
+    }
+
+    .image-side {
+      flex: 0 0 250px;
+    }
+
+    .image-side img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MealPrep Magic</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="our-products.html">Our Products</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>🍋 Lemon Dessert</h1>
+    <p><strong>Servings:</strong> 18 people &nbsp; | &nbsp; <strong>Cook Time:</strong> ~30 minutes + 1 hour chill time</p>
+
+    <!-- Ingredients + Image Container -->
+    <div class="section" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+      <!-- Ingredients List -->
+      <div style="flex: 1 1 500px; min-width: 300px;">
+        <h2>🧂 Ingredients</h2>
+        <ul>
+          <li>1 packet of biscuits</li>
+          <li>3 lemons</li>
+          <li>2 limes</li>
+          <li>1 can of cream</li>
+          <li>1 can of sweetened condensed milk</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="image-side">
+        <img src="image-12.jpg" alt="Lemon Dessert" />
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="section">
+      <h2>👩‍🍳 Instructions</h2>
+      <div class="step"><strong>1.</strong> In a medium-sized bowl, pour in the cream and sweetened condensed milk. Mix well.</div>
+      <div class="step"><strong>2.</strong> Squeeze the juice of the lemons and limes into the mixture. Stir thoroughly. Add more lemon juice if desired for extra tanginess.</div>
+      <div class="step"><strong>3.</strong> In a tray, lay down a layer of biscuits.</div>
+      <div class="step"><strong>4.</strong> Spread enough of the lemon mixture over the biscuits to fully cover them.</div>
+      <div class="step"><strong>5.</strong> Repeat layering biscuits and lemon mixture until all of the mixture is used, ending with the lemon mixture as the final top layer.</div>
+      <div class="step"><strong>6.</strong> Garnish the top with lime zest.</div>
+      <div class="step"><strong>7.</strong> Let the dessert rest in the refrigerator for at least 1 hour before serving. Enjoy!</div>
+    </div>
+  </div>
+</body>
+</html>

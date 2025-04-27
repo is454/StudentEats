@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Header */
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffa64d;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    /* Hover effect */
+    nav a:hover {
+      color: #ffa64d;
+    }
+
+    /* Active page  */
+    nav a.active {
+      color: #ffa64d;
+    }
+
+    /* === Base === */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefaf6;
+      color: #2f2f2f;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #b34d00;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin: 0.75rem 0 0.5rem;
+      color: #3a2e1f;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* === Section Styling === */
+    section {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+
+    section:nth-of-type(even) {
+      background-color: #fcebd3;
+    }
+
+    /* === Contact + Subscribe Forms === */
+    .contact-form,
+    .subscribe-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .subscribe-form input {
+      padding: 12px;
+      border: 1px solid #e3b27e;
+      border-radius: 6px;
+      background-color: #fffaf5;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #cc5500;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+
+    button:hover:enabled {
+      opacity: 1;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    /* === FAQ Section === */
+    .faq-item {
+      background-color: #fffefc;
+      padding: 20px;
+      border-left: 4px solid #e67300;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    /* === Inspiration Section === */
+    .inspiration-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .inspiration-list li {
+      background-color: #fffaf5;
+      padding: 15px;
+      border-left: 4px solid #cc5500;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .inspiration-list a {
+      text-decoration: none;
+      color: #b34700;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .inspiration-list a:hover {
+      color: #993d00;
+    }
+
+    /* === Text Centering for Small Sections === */
+    .subscribe-section p,
+    .inspiration-section p {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    /* === RESPONSIVE DESIGN === */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .container {
+        padding: 30px 15px;
+      }
+
+      input, textarea, button {
+        font-size: 1rem;
+      }
+
+      .faq-item {
+        padding: 15px;
+      }
+
+      .inspiration-list li {
+        padding: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      .contact-form,
+      .subscribe-form {
+        width: 100%;
+      }
+
+      button {
+        padding: 10px;
+      }
+    }
+
+    /* === Contact Section === */
+    .contact-section {
+      text-align: center; /* Centering the text */
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto; /* Center the form */
+    }
+
+    /* === Subscribe Section === */
+    .subscribe-section {
+      text-align: center; /* Centering the text */
+    }
+
+    .subscribe-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto; /* Center the form */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">StudentEats</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html" class="active">About Us</a></li>
+        <li><a href="our-products.html">Our Products</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="recipes.html">
+      <button class="cta">Start Cooking</button>
+    </a>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section container">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe-section container">
+    <h2>Subscribe to the Latest News</h2>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Can I substitute ingredients in the recipe?</h3>
+      <p>Yes! Many recipes are flexible. Common substitutions include using Greek yogurt instead of sour cream, almond milk instead of dairy milk, or gluten-free flour blends for regular flour. Always consider how the swap might affect taste or texture.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I store leftovers?</h3>
+      <p>Most leftovers can be stored in an airtight container in the refrigerator for 3–5 days. For longer storage, consider freezing. Be sure to let hot dishes cool before sealing and refrigerating.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I double or halve the recipe?</h3>
+      <p>Absolutely. Most recipes can be scaled up or down. Just adjust cooking times accordingly—smaller portions may cook faster, while larger ones may need more time.</p>
+    </div>
+  </section>
+
+  <!-- Inspiration Section -->
+  <section class="inspiration-section container">
+    <h2>Our Inspiration</h2>
+    <ul class="inspiration-list">
+      <li><a href="https://stripe.com" target="_blank">Stripe</a></li>
+      <li><a href="https://www.notion.so" target="_blank">Notion</a></li>
+      <li><a href="https://nextjs.org" target="_blank">Next.js</a></li>
+    </ul>
+  </section>
+</body>
+</html>

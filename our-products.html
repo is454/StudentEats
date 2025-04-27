@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Products</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffa64d;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ffa64d;
+    }
+
+    .main-content {
+      max-width: 1000px;
+      margin: 1rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .product-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: calc(25% - 1rem); /* Adjusted for 4 products per row */
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+      .product-card {
+        max-width: calc(33.333% - 1rem); /* Three cards per row on medium screens */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .product-card {
+        max-width: calc(50% - 1rem); /* Two cards per row on smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-card {
+        max-width: 100%; /* One card per row on very small screens */
+      }
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card img:hover {
+      transform: scale(1.03);
+    }
+
+    h2 {
+      margin: 1rem 0 0.5rem;
+      color: #ffa64d;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MealPrep Magic</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="our-products.html" class="active">Our Products</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+
+    <!-- Product Card 1 -->
+    <div class="product-card">
+      <a href="https://www.thefreshgrocer.com/sm/pickup/rsid/2000/product/bowl-&-basket-small-curd-4-milkfat-minimum-cottage-cheese-24-oz-id-00041190470143" target="_blank">
+        <img src="cottage-cheese.jpg" alt="Cottage Cheese" />
+      </a>
+      <h2>Cottage Cheese</h2>
+      <div class="product-price">$3.49</div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card">
+      <a href="https://www.shoprite.com/product/bowl-&-basket-italian-style-bread-crumbs-24-oz-00041190085972" target="_blank">
+        <img src="italian-bread.jpg" alt="Italian Bread Crumbs" />
+      </a>
+      <h2>Italian Bread Crumbs</h2>
+      <div class="product-price">$1.99</div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-card">
+      <a href="https://www.terhuneorchards.com/product/cheese-grated-parmesan/" target="_blank">
+        <img src="parmesan.jpg" alt="Grated Parmesan" />
+      </a>
+      <h2>Grated Parmesan</h2>
+      <div class="product-price">$5.00</div>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="product-card">
+      <a href="https://www.target.com/p/classic-hummus-10oz-good-gather-8482/-/A-54531895?TCID=PDS-19859778443&gad_source=1&gbraid=0AAAAAD-5dfaVNylX6QEhTaclInvT0DtAK&gclid=Cj0KCQjwiLLABhCEARIsAJYS6unsru8Ypr2CvKOJVYxZp2SMbE10Su3cL1ko0QRPKzx9xePHqQ5zp9EaAmdqEALw_wcB&gclsrc=aw.ds" target="_blank">
+        <img src="hummus.jpg" alt="Product 4" />
+      </a>
+      <h2>Hummus</h2>
+      <div class="product-price">$2.99</div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="product-card">
+      <a href="https://www.shoprite.com/sm/pickup/rsid/3000/product/bowl-&-basket-natural-sour-cream-16-oz-00041190472079" target="_blank">
+        <img src="sour-cream.jpg" alt="Product 5" />
+      </a>
+      <h2>Sour Cream</h2>
+      <div class="product-price">$2.19</div>
+    </div>
+
+    <!-- Product Card 6 -->
+    <div class="product-card">
+      <a href="https://www.walmart.com/ip/Kikkoman-Naturally-Brewed-Soy-Sauce-15-fl-oz/10452918?wmlspartner=wlpa&selectedSellerId=0&selectedOfferId=838677FE8DA741558498B06FD591F6E3&conditionGroupCode=1&wl13=3562&gclsrc=aw.ds&adid=2222222227710452918_161193766053_21214199653&wl0=&wl1=g&wl2=c&wl3=697173827980&wl4=pla-2348450966064&wl5=9003551&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=10452918&veh=sem_LIA&gad_source=1&gbraid=0AAAAADmfBIqf6J0xTQXTSEvVkZB3mphj8&gclid=Cj0KCQjwiLLABhCEARIsAJYS6umqOzDcm5FEQ1M5P9dUDnufizke8tmxYv_netZB1aKzOM6JYVrGxJQaAj0oEALw_wcB" target="_blank">
+        <img src="soy-sauce.jpg" alt="Product 6" />
+      </a>
+      <h2>Soy Sauce</h2>
+      <div class="product-price">$3.77</div>
+    </div>
+
+    <!-- Product Card 7 -->
+    <div class="product-card">
+      <a href="https://www.walmart.com/ip/Mizkan-Mirin-Sweet-Cooking-Seasoning-12-fl-oz/244627151" target="_blank">
+        <img src="mirin.jpg" alt="Product 7" />
+      </a>
+      <h2>Mirin</h2>
+      <div class="product-price">$3.12</div>
+    </div>
+
+    <!-- Product Card 8 -->
+    <div class="product-card">
+      <a href="https://www.walmart.com/ip/Imperial-Dragon-100-Pure-Sesame-Seed-Oil-5-fl-oz/10451695" target="_blank">
+        <img src="sesame-oil.jpg" alt="Product 8" />
+      </a>
+      <h2>Sesame Oil</h2>
+      <div class="product-price">$3.22</div>
+    </div>
+
+    <!-- Product Card 9 -->
+    <div class="product-card">
+      <a href="https://shop.cobramestate.com/products/california-select-extra-virgin-olive-oil" target="_blank">
+        <img src="olive-oil.jpg" alt="Product 9" />
+      </a>
+      <h2>Olive Oil</h2>
+      <div class="product-price">$16.99</div>
+    </div>
+
+    <!-- Product Card 10 -->
+    <div class="product-card">
+      <a href="https://www.bjs.com/product/canilla-long-grain-rice-20-lb-bag/3000000000000216285/" target="_blank">
+        <img src="rice.jpg" alt="Product 10" />
+      </a>
+      <h2>White Rice</h2>
+      <div class="product-price">$19.49</div>
+    </div>
+
+    <!-- Product Card 11 -->
+    <div class="product-card">
+      <a href="https://www.target.com/p/kedem-tea-biscuits-4-2oz/-/A-14896827#lnk=sametab" target="_blank">
+        <img src="biscuits.jpg" alt="Product 11" />
+      </a>
+      <h2>Biscuits</h2>
+      <div class="product-price">$0.99</div>
+    </div>
+
+    <!-- Product Card 12 -->
+    <div class="product-card">
+      <a href="https://www.target.com/p/nestle-media-crema-table-cream-7-6oz/-/A-14767742#lnk=sametab" target="_blank">
+        <img src="cream.jpg" alt="Product 12" />
+      </a>
+      <h2>Canned Cream</h2>
+      <div class="product-price">$2.39</div>
+    </div>
+
+    <!-- Product Card 13 -->
+    <div class="product-card">
+      <a href="https://www.target.com/p/nestle-gluten-free-la-lechera-14-fl-oz/-/A-14767743#lnk=sametab" target="_blank">
+        <img src="sweetened-condensed-milk.jpg" alt="Product 13" />
+      </a>
+      <h2>Sweetened Condensed Milk</h2>
+      <div class="product-price">$2.79</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
